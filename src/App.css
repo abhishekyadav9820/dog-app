@@ -6,7 +6,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Asul', serif;
-  background:#436879;
+  background:#5d7f8e;
 }
 
 
@@ -20,4 +20,17 @@ body {
 .container .imageCard {
   padding: 10px;
   border-radius: 10px;
+}
+
+.container .ant-card-body{
+  padding: 0;
+}
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-card .ant-card-actions>li{
+  margin:auto;
+}
+
+
+:where(.css-dev-only-do-not-override-6j9yrn).ant-card .ant-card-body{
+  padding: 0;
 }
