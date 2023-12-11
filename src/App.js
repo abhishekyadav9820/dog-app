@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Card, Row, Image, Button, Badge, Modal } from "antd";
 import axios from "axios";
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import { ShoppingCartOutlined,DeleteOutlined } from "@ant-design/icons";
 
 const predefinedPrices = [200, 300, 400, 500];
 
@@ -44,6 +44,12 @@ function App() {
 
   const hideModal = () => {
     setModalVisible(false);
+  };
+
+  const handleRemoveFromCart = (index) => {
+    const updatedCart = [...cart];
+    updatedCart.splice(index, 1);
+    setCart(updatedCart);
   };
 
   return (
@@ -131,7 +137,14 @@ function App() {
                     alt={`Dog ${index + 1}`}
                     src={item.image}
                   />
-                  <p style={{ fontWeight: "500",margin:"10px" }}>Price: {item.price}</p>
+                  <p style={{ fontWeight: "500",margin:"10px" }}>Price: {item.price}
+                  <Button
+                      type="danger"
+                      icon={<DeleteOutlined />}
+                      onClick={() => handleRemoveFromCart(index)}
+                      style={{ marginLeft: "32px",color: "#ff4d4f"  }}
+                    />
+  </p>
                 </Card>
               </div>
             ))}
