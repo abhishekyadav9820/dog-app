@@ -36,7 +36,7 @@ function App() {
           </Row>
           <Row justify="center" style={{ marginTop: "20px" }}>
             <Button type="primary" onClick={fetchDogImages}>
-              Fetch New Image
+              Fetch Image
             </Button>
           </Row>
         </Card>
