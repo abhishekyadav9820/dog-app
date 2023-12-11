@@ -30,7 +30,6 @@ body {
   margin:auto;
 }
 
-
 :where(.css-dev-only-do-not-override-6j9yrn).ant-card .ant-card-body{
   padding: 0;
 }
