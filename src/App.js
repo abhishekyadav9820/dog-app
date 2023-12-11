@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import './App.css';
-import { Card, Row, Image } from "antd";
+import { Card, Row, Image,Button } from "antd";
 import axios from 'axios';
 
 function App() {
@@ -33,6 +33,11 @@ function App() {
               />
               </div>
             ))}
+          </Row>
+          <Row justify="center" style={{ marginTop: "20px" }}>
+            <Button type="primary" onClick={fetchDogImages}>
+              Fetch New Image
+            </Button>
           </Row>
         </Card>
       </div>
