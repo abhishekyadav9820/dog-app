@@ -1,0 +1,17 @@
+.cartSection {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  margin: 40px;
+}
+
+.cartSection h3 {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #111;
+  font-weight: 500;
+}
+
+:where(.css-6j9yrn).ant-card .ant-card-body{
+    padding: 0;
+  }

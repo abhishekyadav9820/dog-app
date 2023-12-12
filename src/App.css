@@ -10,29 +10,4 @@ body {
 }
 
 
-.container {
-  text-align: center;
-  color: #fff;
-  font-size: 2rem;
-  margin: 40px;
-}
 
-.container .imageCard {
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.container .ant-card-body{
-  padding: 0;
-}
-
-:where(.css-dev-only-do-not-override-6j9yrn).ant-card .ant-card-actions>li,:where(.css-6j9yrn).ant-card .ant-card-actions>li{
-  margin:auto;
-}
-
-:where(.css-dev-only-do-not-override-6j9yrn).ant-card .ant-card-body{
-  padding: 0;
-}
-:where(.css-6j9yrn).ant-card .ant-card-body{
-  padding: 0;
-}
