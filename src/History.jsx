@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Empty, Table } from 'antd';
+import { Card, Empty, Table } from 'antd';
 import { useCartData } from './CartContex';
 
 const History = () => {
@@ -39,7 +39,7 @@ const History = () => {
       <h1 style={{color:"#fff",textAlign:"center"}}>History Page</h1>
       {history && history.length > 0 ? (
       <Table style={{padding:"0 40px"}} columns={columns} dataSource={data} pagination={{ pageSize: 6 }} />
-      ): <Empty description="No History"/>}
+      ): <Card style={{margin:"10px"}}><Empty description="No History"/></Card>}
     </div>
   );
 };
