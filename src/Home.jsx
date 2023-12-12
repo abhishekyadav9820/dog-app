@@ -41,15 +41,14 @@ const Home = () => {
       }, 500);
       return () =>  clearTimeout(dbounce)
     }, []);
+
+   // console.log(history); 
   
-    const handleAddToCart = (imageIndex) => {
+     const handleAddToCart = (imageIndex) => {
       if (cart.length >= 6) {
         alert("Cannot add more than 6 items to the cart");
         return;
       }
-
-      
-
       const selectedImage = dogImages[imageIndex];
       const selectedPrice = predefinedPrices[imageIndex];
       setCart([...cart, { image: selectedImage, price: selectedPrice }]);
@@ -120,6 +119,9 @@ const Home = () => {
               )): <Empty />}
           </Row>
           <Row justify="end" style={{ marginTop: "20px" }}>
+          <Button type="link" onClick={() => navigate("/history")}>
+      History View
+    </Button>
             <Button type="primary" onClick={fetchDogImages}>
               Fetch Image
             </Button>

@@ -41,8 +41,8 @@ const Cart = () => {
                     }}
                   >
                     <Image
-                      width={200}
-                      height={200}
+                      width={150}
+                      height={150}
                       alt={`Dog ${index + 1}`}
                       src={item.image}
                     />

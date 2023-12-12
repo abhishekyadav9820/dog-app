@@ -11,3 +11,6 @@ body {
 
 
 
+:where(.css-6j9yrn).ant-card .ant-card-body{
+  padding: 0;
+}
